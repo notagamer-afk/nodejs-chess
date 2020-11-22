@@ -1,0 +1,14 @@
+
+      <div class="panel panel-default panel-log">
+        <div class="panel-heading">
+          <span>Gamelog</span>
+        </div>
+        <div class="panel-heading">
+          <span>You are playing for {{$ctrl.color}} and now it is {{$ctrl.whoMoves}} move</span>
+        </div>
+        <div class="panel-body logbody clearfix">
+          <ul ng-repeat="move in $ctrl.moves">
+            <li>{{move.user}} moves from {{move.form}} to {{move.to}}</li>
+          </ul>
+        </div>
+      </div>

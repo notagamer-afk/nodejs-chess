@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\src",
+    "\\config",
+    "\\lib",
+    "\\lib\\server",
+    "\\test"
+  ],
+  "SelectedNode": "\\lib\\server\\db.js",
+  "PreviewInSolutionExplorer": false
+}

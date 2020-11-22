@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row text-center">
+    <h1>Players room</h1>
+    <h4 ng-hide="$ctrl.isOnline()" class="text-danger">Can't connect to game socket! Server is not running or your internet connection is bad :(</h4>
+    <h4 ng-show="$ctrl.isOnline()" class="text-success">Connected :)</h4>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <table class="table">
+        <col width="50%">
+        <col width="50%">
+        <caption class="text-center">Players online</caption>
+        <tr ng-repeat="user in $ctrl.usersOnline()">
+          <td><span>{{user.name}}</span></td>
+          <td>
+            <button 
+              class="btn btn-success btn-invitation" 
+              ng-click="$ctrl.sendInvitation(user.id); msg = 'Cancel'; hovering=true" 
+              ng-show="user.status === 'free'">
+              Invite
+            </button>
+            <button 
+              class="btn btn-warning btn-invitation"
+              ng-class="{'btn-danger':hovering}"
+              ng-click="$ctrl.cancelInvitation(user.id)"
+              ng-show="user.status === 'pending'"
+              ng-mouseenter="msg = 'Cancel'; hovering=true"
+              ng-mouseleave="msg = 'Pending...'; hovering=false">
+              {{msg || "Pending..."}}
+            </button>
+            </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-xs-6">
+      <table class="table">
+        <col width="30%">
+        <col width="70%">
+        <caption class="text-center">Incoming invitations</caption>
+        <tr ng-repeat="inv in $ctrl.incommingInvitations()">
+          <td><span>{{inv.userName}}</span></td>
+          <td class="text-center">
+            <button
+              class="btn btn-success btn-invitation"
+              ng-click='$ctrl.acceptInvitation(inv.userId)'>
+              Accept
+            </button>
+            <button
+              class="btn btn-danger btn-invitation"
+              ng-click='$ctrl.refuseInvitation(inv.userId)'>
+              Refuse
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>

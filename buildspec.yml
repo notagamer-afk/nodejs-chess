@@ -12,7 +12,8 @@ phases:
   post_build:
     commands:
       - echo Build completed
+      - ls
 artifacts:
   files:
     - '**/*'
-  base-directory: '/nodejs-chess'
+  base-directory: 'app/nodejs-chess'

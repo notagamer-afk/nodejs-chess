@@ -13,7 +13,3 @@ phases:
     commands:
       - echo Build completed
       - ls
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'app/nodejs-chess'

@@ -5,7 +5,7 @@ phases:
       nodejs: 10
   pre_build:
     commands:
-      - npm install
+    - npm install
   build:
     commands:
       - npm run build
@@ -15,4 +15,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'target/nodejs-chess'
+  base-directory: '/nodejs-chess'

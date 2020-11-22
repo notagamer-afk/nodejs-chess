@@ -1,5 +1,4 @@
-version: 0.1
-
+version: 0.2
 phases:
   install:
     runtime-versions:
@@ -14,3 +13,7 @@ phases:
   post_build:
     commands:
       - echo Build completed
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'target/nodejs-chess'

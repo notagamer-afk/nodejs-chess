@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
-pre_build:
+check:
   comands:
     - ls
+run_front:
+    comands:
+        - npm run start

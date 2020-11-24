@@ -12,10 +12,4 @@ phases:
   post_build:
     commands:
       - echo Build completed
-      - ls
-  run_front:
-    commands:
-        - npm run client
-  run_back:
-    commands:
-        - npm start
+      - npm run client

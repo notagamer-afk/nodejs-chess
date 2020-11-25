@@ -4,5 +4,5 @@ check:
   comands:
     - ls
 run_front:
-    comands:
-        - npm run start
+  commands:
+    - npm run start

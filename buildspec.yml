@@ -12,3 +12,8 @@ phases:
   post_build:
     commands:
       - echo Build completed
+artifacts:
+    files:
+    - "**/*"
+    discard-path: no
+    base directory: .

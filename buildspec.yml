@@ -16,4 +16,4 @@ artifacts:
     files:
     - "**/*"
     discard-path: no
-    base-directory: client/src
+    base-directory: lib/client

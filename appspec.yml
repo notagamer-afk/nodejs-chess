@@ -1,8 +1,14 @@
 version: 0.0
 os: linux
-check:
-  comands:
-    - ls
-run_front:
-  commands:
-    - npm run start
+files: 
+# You can specify one or more mappings in the files section.
+  - source: /
+    destination: /
+hooks:
+BeforeInstall: 
+    - npm install
+Install:
+    - npm run build
+AfterInstall: 
+#Start the server.
+    - npm start

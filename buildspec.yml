@@ -13,7 +13,10 @@ phases:
     commands:
       - echo Build completed
 artifacts:
-    files:
-    - "**/*"
-    discard-path: no
-    base-directory: lib/client
+  files:
+    - '**/*'
+  secondary-artifacts:
+    artifact1:
+      base-directory: lib/client
+    artifact2:
+      base-directory: lib/server

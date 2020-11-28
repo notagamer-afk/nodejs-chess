@@ -15,4 +15,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-    base-directory: lib/client     
+  base-directory: lib/client     

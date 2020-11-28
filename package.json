@@ -7,7 +7,7 @@
     "build": "gulp",
     "postinstall": "gulp",
     "seedDB": "node ./lib/server/seedDB.js",
-    "start": "node ./lib/server/index.js",
+    "start": "node ./lib/server/app.js",
     "client": "gulp start",
     "test-client": "karma start test/client.config.js --single-run",
     "test-server": "mocha --opts test/server.opts test/server/**/*.spec.js",

@@ -15,12 +15,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  secondary-artifacts:
-    artifact1:
-      files:
-        - '**/*'
-      base-directory: lib/server 
-    artifact2:
-      files:
-        - '**/*'
-      base-directory: lib/client 
+    base-directory: .
+      

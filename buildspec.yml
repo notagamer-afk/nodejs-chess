@@ -12,8 +12,8 @@ phases:
   post_build:
     commands:
         - echo Build completed
+        
 artifacts:
   files:
-    "lib/client/*"
-  #discard-paths: no
-  #base-directory: lib/client
+    - '**/*'
+    base-directory: lib/client     

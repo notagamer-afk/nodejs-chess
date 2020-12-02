@@ -5,14 +5,14 @@ phases:
       nodejs: 10
   pre_build:
     commands:
-        - npm install
+    - npm install
   build:
     commands:
-        - npm run build
+      - npm run build
   post_build:
     commands:
-        - echo Build completed
+      - echo Build completed
 artifacts:
+  base-directory: lib/client
   files:
-    - '**/*'
-    base-directory: lib/client 
+    - '**/*' 

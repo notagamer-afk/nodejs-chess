@@ -17,7 +17,7 @@ artifacts:
     - '**/*'
   secondary-artifacts:
     artifact1:
-      base-directory: .
+      base-directory: lib/client
       files:
         - 'lib/client/*' 
 #    artifact2:

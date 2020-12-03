@@ -20,7 +20,7 @@ artifacts:
     artifact1:
       base-directory: lib/client
       files:
-        - '**/*' 
+        - 'lib/client/*' 
     #discard-paths: yes
     artifact2:
       base-directory: lib/server

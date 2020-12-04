@@ -16,8 +16,7 @@ artifacts:
   base-directory: .
   files:
     - 'lib/client/'
-    - 'lib/common'
-	
+    - 'lib/common'	
 #  secondary-artifacts:
 #    artifact1:
 #      base-directory: lib/client

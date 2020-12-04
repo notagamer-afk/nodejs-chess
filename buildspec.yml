@@ -15,7 +15,7 @@ phases:
 artifacts:
   base-directory: .
   files:
-    - 'lib/client/'	
+    - 'lib/client/*'	
 #  secondary-artifacts:
 #    artifact1:
 #      base-directory: lib/client

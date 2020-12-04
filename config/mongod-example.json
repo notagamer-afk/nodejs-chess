@@ -1,12 +1,12 @@
 {
   "systemLog": {
     "destination": "file",
-    "path": "/app/test/test.log",
+    "path": "C:/Users/tkust/dbs/test/test.log",
     "logAppend": true
   },
   "storage": {
     "engine": "mmapv1",
-    "dbPath": "/app/test",
+    "dbPath": "C:/Users/tkust/dbs/test",
     "journal": {
       "enabled": true
     }

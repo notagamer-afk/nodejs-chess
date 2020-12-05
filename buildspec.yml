@@ -13,8 +13,8 @@ phases:
     commands:
       - echo Build completed
 artifacts:
-  files:
-    - 'lib/server/*'
+#  files:
+#    - 'lib/server/*'
   secondary-artifacts:
     artifact1:
       files:

@@ -48,7 +48,7 @@ var html = {
 
 var env = Object.assign({
   NODE_ENV: 'development',
-  API_URL: '//chessapp-env.eba-sjxff4mb.us-east-2.elasticbeanstalk.com:8081'
+  API_URL: '//nodejs-chess-s3.s3-website.us-east-2.amazonaws.com'
 }, process.env);
 
 module.exports = {

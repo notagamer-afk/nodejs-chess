@@ -15,9 +15,10 @@ phases:
 artifacts:
   files:
     - 'lib/server/*'
-  discard-paths: yes
   secondary-artifacts:
     artifact1:
       files:
         - 'lib/client/*'
-      discard-paths: yes
+    artifact2:
+      files:
+        - 'lib/server/*'

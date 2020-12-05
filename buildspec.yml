@@ -13,9 +13,9 @@ phases:
     commands:
       - echo Build completed
 artifacts:
-  base-directory: .
+  base-directory: lib/client
   files:
-    - 'lib/client/*'	
+    - '**/*'	
 #  secondary-artifacts:
 #    artifact1:
 #      base-directory: lib/client
